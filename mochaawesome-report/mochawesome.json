@@ -1,0 +1,176 @@
+{
+  "stats": {
+    "suites": 2,
+    "tests": 4,
+    "passes": 4,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-11-28T23:34:25.179Z",
+    "end": "2023-11-28T23:34:25.207Z",
+    "duration": 28,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "dc2c53c8-b38f-4c04-a2bd-b8f9afcd30a8",
+      "title": "",
+      "fullFile": "C:\\Users\\Fran\\Desktop\\ppes\\Mocha-Chai-JS\\integracion\\int_paciente-bascula.spec.js",
+      "file": "\\integracion\\int_paciente-bascula.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "7668ce2b-93db-4f03-86f2-cf2212652cda",
+          "title": "Integration Suite -- Integración Paciente-Bascula",
+          "fullFile": "C:\\Users\\Fran\\Desktop\\ppes\\Mocha-Chai-JS\\integracion\\int_paciente-bascula.spec.js",
+          "file": "\\integracion\\int_paciente-bascula.spec.js",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [],
+          "suites": [
+            {
+              "uuid": "c42b3ab3-6f04-41b9-903e-cd1f8a1b594f",
+              "title": "Paciente-Bascula - Test Case 1",
+              "fullFile": "C:\\Users\\Fran\\Desktop\\ppes\\Mocha-Chai-JS\\integracion\\int_paciente-bascula.spec.js",
+              "file": "\\integracion\\int_paciente-bascula.spec.js",
+              "beforeHooks": [],
+              "afterHooks": [],
+              "tests": [
+                {
+                  "title": "Consstuctor new Paciente()",
+                  "fullTitle": "Integration Suite -- Integración Paciente-Bascula Paciente-Bascula - Test Case 1 Consstuctor new Paciente()",
+                  "timedOut": false,
+                  "duration": 1,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "objPaciente=new Paciente('Pedro','Ruiz del Castillo','16/02/1983');\nconst saludo=objPaciente.saludar();\nassert.isString(saludo);",
+                  "err": {},
+                  "uuid": "c6f8d052-b0dd-4fad-a2ad-a517615c4708",
+                  "parentUUID": "c42b3ab3-6f04-41b9-903e-cd1f8a1b594f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "Constructor new Bascula()",
+                  "fullTitle": "Integration Suite -- Integración Paciente-Bascula Paciente-Bascula - Test Case 1 Constructor new Bascula()",
+                  "timedOut": false,
+                  "duration": 19,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "objBascula=new Bascula();\nobjBascula.anotarPeso(95.5,1.83);\nexpect(objBascula.obtenerNumeroAnotaciones()).to.be.equal(1);",
+                  "err": {},
+                  "uuid": "7c060310-8c1e-4e3b-bc11-6ab391f0ad80",
+                  "parentUUID": "c42b3ab3-6f04-41b9-903e-cd1f8a1b594f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "objPaciente.calcularIMC()",
+                  "fullTitle": "Integration Suite -- Integración Paciente-Bascula Paciente-Bascula - Test Case 1 objPaciente.calcularIMC()",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "expect(objPaciente.calcularIMC()).to.be.equal(-1);",
+                  "err": {},
+                  "uuid": "ba51bf21-468f-420e-902e-1090458c6451",
+                  "parentUUID": "c42b3ab3-6f04-41b9-903e-cd1f8a1b594f",
+                  "isHook": false,
+                  "skipped": false
+                },
+                {
+                  "title": "objPaciente.modificarBascula(objBascula)",
+                  "fullTitle": "Integration Suite -- Integración Paciente-Bascula Paciente-Bascula - Test Case 1 objPaciente.modificarBascula(objBascula)",
+                  "timedOut": false,
+                  "duration": 0,
+                  "state": "passed",
+                  "speed": "fast",
+                  "pass": true,
+                  "fail": false,
+                  "pending": false,
+                  "context": null,
+                  "code": "objPaciente.modificarBascula(objBascula);\nexpect(objPaciente.calcularIMC()).to.be.equal('28.52');",
+                  "err": {},
+                  "uuid": "b605e30c-550a-4854-9ec0-4274ca5cd044",
+                  "parentUUID": "c42b3ab3-6f04-41b9-903e-cd1f8a1b594f",
+                  "isHook": false,
+                  "skipped": false
+                }
+              ],
+              "suites": [],
+              "passes": [
+                "c6f8d052-b0dd-4fad-a2ad-a517615c4708",
+                "7c060310-8c1e-4e3b-bc11-6ab391f0ad80",
+                "ba51bf21-468f-420e-902e-1090458c6451",
+                "b605e30c-550a-4854-9ec0-4274ca5cd044"
+              ],
+              "failures": [],
+              "pending": [],
+              "skipped": [],
+              "duration": 20,
+              "root": false,
+              "rootEmpty": false,
+              "_timeout": 2000
+            }
+          ],
+          "passes": [],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 0,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "10.2.0"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
